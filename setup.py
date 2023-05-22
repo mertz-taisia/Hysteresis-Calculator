@@ -7,7 +7,7 @@ if sys.platform == "win32":
 
 setup(
     name = "Hysteresis Calculator",
-    version = "0.1",
+    version = "0.2",
     description = "The program allows performing a mathematical analysis of hysteresis behavior detected in voltage gating of large beta-barrel transmembrane ion channels",
     executables = [Executable("frontend.py", base=base)]
 )
