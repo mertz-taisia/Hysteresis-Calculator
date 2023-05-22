@@ -36,7 +36,7 @@ def dataAnalysis(ramp_num, file_name):
     df = pd.concat(dfs, axis=0, ignore_index=True)
 
     # Swap the second and third row
-    df.iloc[[1, 2]] = -df.iloc[[2, 1]].values
+    df.iloc[:, [1, 2]] = -df.iloc[:, [2, 1]].values
 
     # Calculate the number of rows in each group
     n_rows = len(df) // ramp_count
@@ -59,7 +59,6 @@ def dataAnalysis(ramp_num, file_name):
 
     # Save the means to a new Excel file without row index and column names
     results_file_name = f"results_{os.path.splitext(input_file_name)[0]}.xlsx"
-    # means.to_excel(results_file_name, index=False, header=False)
 
     # Select specific columns from each dataset
     selected_datasets = []
