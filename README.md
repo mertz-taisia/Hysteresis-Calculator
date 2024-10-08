@@ -7,7 +7,7 @@ specifically for analyzing hysteresis behavior in the voltage gating of large be
 Prior to the development of this application, the lab had to rely on manual computations, which were time-consuming and labor-intensive.
 
 ## Installation
-Navigate to the the Application Setup folder in the main repository and download th eexecutable to gain access to the desktop application
+Navigate to the the Application Setup folder in the main repository and download the executable to gain access to the desktop application
 
 ## Usage
 Data Formating:
